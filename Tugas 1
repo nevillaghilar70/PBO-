@@ -1,0 +1,44 @@
+# Tugas 1 — Class RekeningBank (Java & PHP)
+
+## Identitas Mahasiswa
+**Nama:** Nevilla Ghilar Apryanti  
+**NPM:** 4525210054
+
+## Domain
+**Rekening Bank** — Merepresentasikan sistem sederhana untuk menyimpan dan mengelola saldo nasabah.
+
+## Struktur Class
+
+| Field | Tipe | Keterangan |
+|---|---|---|
+| `nomorRekening` | `String` | Wajib diisi lewat constructor, tidak berubah |
+| `pemilikRekening` | `String` | Wajib diisi lewat constructor |
+| `saldo` | `double` | Jumlah uang di rekening, tidak boleh negatif |
+
+### Method
+- `getNomorRekening()`
+- `getPemilikRekening()`
+- `getSaldo()`
+- `setor(jumlah)`
+- `tarik(jumlah)`
+
+## Invarian & Alasan
+
+### 1. Saldo tidak boleh negatif
+Alasan: rekening bank tanpa fasilitas overdraft tidak boleh memiliki saldo di bawah nol.
+
+### 2. Nomor rekening tidak dapat diubah
+Alasan: nomor rekening merupakan identitas unik sebuah rekening.
+
+## Struktur Berkas
+
+```text
+PBO/
+├── Tugas1/
+│   ├── img/
+│   ├── src/
+│   │   ├── RekeningBank.java
+│   │   ├── Main.java
+│   │   ├── RekeningBank.php
+│   │   └── main.php
+│   └── README.md
